@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>LSY&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  
+  
+    <link rel="alternate" href="/atom.xml" title="LSY's Blog" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+    
+<link rel="stylesheet" href="/localshare/css/share.css">
+
+  
+  
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">LSY&#39;s Blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        
+          <a class="main-nav-link" href="/."><i class="fa fa-home"></i> Home</a>
+        
+          <a class="main-nav-link" href="/archives/"><i class="fa fa-archive"></i> Archive</a>
+        
+      </nav>
+    </div>
+    <div id="search-form">
+      <div id="result-mask" class="hide"></div>
+      <label><input id="search-key" type="text" autocomplete="off" placeholder="search"></label>
+      <div id="result-wrap" class="hide">
+        <div id="search-result"></div>
+      </div>
+      <div class="hide">
+        <template id="search-tpl">
+          <div class="item">
+            <a href="/{path}" title="{title}">
+              <div class="title">{title}</div>
+              <div class="time">{date}</div>
+              <div class="tags">{tags}</div>
+            </a>
+          </div>
+        </template>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  <article id="post-Project-Summary" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/10/30/Project-Summary/">Project Summary</a>
+    </h1>
+  
+
+
+      </header>
+    
+    <div class="article-meta">
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2024-10-30T07:52:59.000Z" itemprop="datePublished">2024/10/30</time>
+</span>
+      
+      
+      
+<a href="/2024/10/30/Project-Summary/#comments" class="article-comment-link">
+  
+  <i class="fa fa-commt"></i>
+  Guestbook
+</a>
+
+
+    </div>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="A-Frequency-Domain-Approach-for-Music-Classification-and-Analysis-Using-High-Pass-and-Low-Pass-Filters"><a href="#A-Frequency-Domain-Approach-for-Music-Classification-and-Analysis-Using-High-Pass-and-Low-Pass-Filters" class="headerlink" title="A Frequency Domain Approach for Music Classification and Analysis Using High-Pass and Low-Pass Filters"></a>A Frequency Domain Approach for Music Classification and Analysis Using High-Pass and Low-Pass Filters</h1><center><b>Shuhan Li</b></center>
+
+<center><b>Future Dream School, Dongguan, China</b></center>
+<center><b>503975647@qq.com</b></center>
+
+
+<p><br><br></p>
+<p><strong>Abstract.</strong> In this study, we conducted a comprehensive frequency domain analysis of 14 songs, spanning diverse genres and time periods, to classify them based on their spectral properties. By utilizing high-passnand low-pass filters, we extracted key parameters, including A, B, C, D,O, f, and k, which provided insights into the distribution of frequency components and the dynamic behavior of each song. A mathematical<br>model was developed to classify the songs into four categories based on the crossover frequency O and the slope k, distinguishing between bass-dominated and treble-dominated tracks. This classification system offers practical applications in genre classification, music recommendation systems, audio equalization, and audio compression, optimizing the processing and categorization of songs according to their frequency characteristics. The findings of this study contribute a novel approach to audio signal analysis, enhancing our ability to understand and manipulate music based on its spectral content. </p>
+<p><strong>Keywords</strong>: Frequency domain analysis, Spectral properties, High-pass and low-pass filters, Music classification, Audio signal processing.</p>
+<h2 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1. Introduction"></a>1. Introduction</h2><p>Music analysis has gained increasing attention in recent years due to its wide range of applications in music recommendation systems, genre classification, and audio signal processing [1,2]. Understanding the underlying spectral characteristics of music is crucial for various fields, including music information retrieval (MIR), audio engineering, and psychoacoustics [3,4]. Frequency domain analysis, in particular, has proven to be an effective method for decomposing and analyzing the components of music, offering insights into both the tonal quality and dynamic behavior of songs [5,6]. By examining the spectral content, we can extract meaningful features that enable us to understand and classify music based on its frequency properties [7].</p>
+<p>Fourier Transform (FT) is a widely used technique for transforming time-domain signals into frequency-domain representations, making it possible to understand the underlying harmonic structure of musical pieces [8]. Fourier analysis has been extensively used in music research to reveal energy distributions across2 Shuhan Li different frequency bands, allowing researchers to gain deeper insights into both<br>harmonic and rhythmic content [9,10]. High-pass and low-pass filters, which selectively emphasize certain frequency bands, are particularly useful in analyzing different components of a musical piece, such as bass and treble [11]. By separating these components, researchers can focus on specific features that contribute to the distinctiveness of musical genres [1].</p>
+<p>Previous studies have used spectral analysis for a variety of purposes, including genre classification, rhythm and melody analysis, and the study of psychoacoustic properties of music [12,1,13]. Tzanetakis and Cook [1] presented an early attempt to develop an automatic genre classification system by extracting features such as spectral centroid and spectral flux. Peeters [6] further analyzed large-scale spectral descriptors to understand the perceptual relevance of various<br>audio features. Serra et al. [12] used unsupervised learning to identify repeating structures in music, providing novel insights into the temporal evolution of musical pieces. Although these studies have provided a solid foundation for un-<br>derstanding spectral characteristics, the classification of musical tracks based on the dynamic behavior of both treble and bass components remains an area that requires further<br>exploration.</p>
+<p>In this study, we present a comprehensive frequency domain analysis of 14 songs from diverse genres and time periods. The objective is to classify the songs based on their spectral properties, focusing on the distinction between low-frequency and high-frequency content. We utilize Fourier-based methods to<br>derive key parameters, such as crossover frequency and slope, which enable us to distinguish between bass and treble-dominated tracks. The extracted parameters include A, B, C, D, O, f, and k, which provide insights into the energy distribution across different frequency bands and the rate of change in frequency content. Using these parameters, we developed a classification model that categorizes the songs into four distinct groups: bass-dominated with sharp transitions,treble-dominated with narrow bandwidth, bass-dominated with smooth transitions, and treble-dominated with broad bandwidth. This classification approach provides a nuanced understanding of the spectral properties of songs and helps in capturing the balance between treble and bass.</p>
+<p>The significance of our study lies in its potential applications within the music industry. Automatic genre classification has been an area of interest for many years [3,1]. By combining multiple spectral parameters, our model provides a more holistic view of the frequency content of songs, enhancing the ability to group tracks based on their spectral characteristics. Furthermore, music recom-<br>76 mendation systems can leverage these features to better match user preferences[14]. For example, users who prefer songs with strong bass components may be directed towards tracks classified in the bass-dominated categories. The model also holds potential for audio equalization, enabling sound engineers to adjust the spectral profile of songs in a more targeted manner [15]. Additionally, this classification system can aid in optimizing audio compression techniques by taking into consideration the frequency bandwidth of each song, thereby improving storage efficiency and streaming quality [16].</p>
+<p>Overall, our research contributes to the field by developing a frequency-based classification framework that integrates multiple spectral features. This framework not only enhances genre classification but also provides valuable insights for applications such as music recommendation, audio equalization, and compression. The study also highlights the importance of considering the dynamic behavior of both low-frequency and high-frequency components, offering a more comprehensive understanding of the spectral characteristics of music. Future<br>research could expand on this approach by incorporating machine learning algorithms to automate the classification process and extend the analysis to a larger dataset of musical pieces.</p>
+<h2 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h2><h3 id="2-1-Fourier-Transform"><a href="#2-1-Fourier-Transform" class="headerlink" title="2.1 Fourier Transform"></a>2.1 Fourier Transform</h3><p>The Fourier transform (FT) is a mathematical operation that transforms a function of time or space into a function of frequency. It allows us to break down complex signals into simpler sinusoidal components, similar to how a musical<br>chord can be separated into individual notes with different frequencies and amplitudes.Instead of expressing the Fourier transform using the exponential function,we can represent it as a sum of sine and cosine functions. The discrete Fourier transform (DFT) of a signal f(n) can be written as:</p>
+<script type="math/tex; mode=display">
+f(\epsilon)=\sum_{n=-\infty}^{\infty}\left(a_n \cos (2 \pi n \epsilon)+b_n \sin (2 \pi n \epsilon)\right)</script><p>Here, the coefficients an and bn represent the amplitudes of the cosine and sine terms, which correspond to the contribution of each frequency component to the original signal.</p>
+<p>In this form, the function is decomposed into a series of sinusoidal functions with different frequencies ε. Each frequency component is represented by a sine or cosine wave, where n indicates the harmonic or multiple of the base frequency.</p>
+<p>The Fourier power spectrum provides a measure of how much energy or power is present in each frequency component. It can be calculated by summing the squares of the sine and cosine coefficients:</p>
+<script type="math/tex; mode=display">P(\epsilon)=a_n^2+b_n^2</script><p>This power spectrum $P(\epsilon)$ shows the relative strength of each frequency in the signal, allowing us to identify dominant frequencies that might correspond to important features in the data.</p>
+<p>The inverse Fourier transform, which reconstructs the original signal from its frequency components, can similarly be expressed as:</p>
+<script type="math/tex; mode=display">
+f(n)=\sum_{\epsilon=-\infty}^{\infty}\left(a_n \cos (2 \pi n \epsilon)+b_n \sin (2 \pi n \epsilon)\right)</script><p>By using sine and cosine functions, we can better visualize how a signal is built up from basic waves, making the Fourier transform more accessible to students familiar with trigonometry.</p>
+<p>Finally, for practical applications, such as in digital signal processing, we use theDiscreteFourierTransform(DFT).</p>
+<p>Forasequenceofvalues $x_0,x_1,…,x_{N−1}$ , the DFT is given by:</p>
+<script type="math/tex; mode=display">
+X_k=\sum_{n=0}^{N-1}\left(a_n \cos \left(\frac{2 \pi k n}{N}\right)+b_n \sin \left(\frac{2 \pi k n}{N}\right)\right)</script><p>In this equation, $X_k$ represents the frequency components, and N is the number of points in the signal.</p>
+<p>The methods presented here are useful for understanding signals in both time and frequency domains, and they form the basis for various applications in engineering and science.</p>
+<h3 id="2-2-High-Pass-Filter-HPF"><a href="#2-2-High-Pass-Filter-HPF" class="headerlink" title="2.2 High-Pass Filter (HPF)"></a>2.2 High-Pass Filter (HPF)</h3><p>A high-pass filter (HPF) is an electronic filter that allows signals with frequencies higher than a certain cutoff frequency to pass through while attenuating (reducing) the lower frequencies. In other words, it blocks low-frequency signals<br>and lets high-frequency signals pass.</p>
+<p>Mathematically, we can represent the filtered signal fHP (n) as the original signal f(n) with the lower frequencies removed. This is done by applying the Fourier transform to the signal, then attenuating the lower-frequency components in the frequency domain, and finally performing an inverse Fourier transform to obtain the filtered signal in the time domain:</p>
+<script type="math/tex; mode=display">
+f_{H P}(n)=\sum_{\epsilon=\epsilon_c}^{\infty}\left(a_n \cos (2 \pi n \epsilon)+b_n \sin (2 \pi n \epsilon)\right)</script><p>Here, $ε_c$ is the cutoff frequency, meaning that only frequency components with $ε ≥ ε_c$  are retained.</p>
+<p>High-pass filters are widely used in audio engineering to eliminate low-frequency noise, such as background hum or bass sounds, and allow higher frequencies (such as voices or instruments) to pass through. They also have applications in radio frequency devices and circuits where blocking low-frequency signals is necessary.</p>
+<p>In the optical domain, a high-pass filter (also called a ”long-pass” filter) works by allowing longer wavelengths (which correspond to lower frequencies in the electromagnetic spectrum) to pass while blocking shorter wavelengths. This<br>property is useful in a variety of scientific and industrial applications.</p>
+<h3 id="2-3-Correlation"><a href="#2-3-Correlation" class="headerlink" title="2.3 Correlation"></a>2.3 Correlation</h3><p>In statistics, the auto-correlation of a random process quantifies the correlation between values of the process at different points in time, as a function of the two times or the time difference.</p>
+<script type="math/tex; mode=display">
+R=\frac{\sum_{i=1}^N\left(x_i-\bar{x}\right)\left(y_i-\bar{y}\right)}{\sqrt{\sum_{i=1}^N\left(x_i-\bar{x}\right)^2} \sqrt{\sum_{i=1}^N\left(y_i-\bar{y}\right)^2}}=\frac{S_{x y}}{S_x S_y}</script><p>Here, $x_i$ and $y_i$ represent data points, $\bar{x}$ and $\bar{y}$ are the mean values of $x$ and $y$, respectively, and $S_x$ and $S_y$ are their standard deviations. The numerator,$S_{xy}$, denotes the covariance between the two quantities. This generally indicateswhether the behavior of the two quantities is similar. Dividing the covariance by the product of the standard deviations ensures that the correlation coefficient lies between -1 and 1, with the magnitude indicating the strength of the correlationand the sign indicating the direction.</p>
+<h2 id="3-Results-and-Discussions"><a href="#3-Results-and-Discussions" class="headerlink" title="3 Results and Discussions"></a>3 Results and Discussions</h2><p>Table 1: Information of songs used in this work.</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>Series number S0</th>
+<th>song names</th>
+<th>author</th>
+<th>year duration(min)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S0</td>
+<td>Tong nian (Childhood)</td>
+<td>Lo Ta-yu</td>
+<td>1982    3.50</td>
+</tr>
+<tr>
+<td>S1</td>
+<td>Dream it possible</td>
+<td>Delacey</td>
+<td>2016    3.22</td>
+</tr>
+<tr>
+<td>S2</td>
+<td>Numb</td>
+<td>Linkin Park</td>
+<td>2003    3.06</td>
+</tr>
+<tr>
+<td>S3</td>
+<td>My Love</td>
+<td>Westlife</td>
+<td>2000    3.52</td>
+</tr>
+<tr>
+<td>S4</td>
+<td>You Raise Me Up</td>
+<td>Westlife</td>
+<td>2005    4.52</td>
+</tr>
+<tr>
+<td>S5</td>
+<td>Nightingale</td>
+<td>Yanni</td>
+<td>1997    5.44</td>
+</tr>
+<tr>
+<td>S6</td>
+<td>Light chaser</td>
+<td>Cen Ning’er</td>
+<td>2017    3.55</td>
+</tr>
+<tr>
+<td>S7</td>
+<td>My Homeland</td>
+<td>Han Hong</td>
+<td>2003    5.23</td>
+</tr>
+<tr>
+<td>S8</td>
+<td>Hills</td>
+<td>Jin Minqu</td>
+<td>2016    5.34</td>
+</tr>
+<tr>
+<td>S9</td>
+<td>Song of an ordinary</td>
+<td>Jonathan Lee</td>
+<td>1996    3.51</td>
+</tr>
+<tr>
+<td>S10</td>
+<td>Lovesickness</td>
+<td>Mao Amin</td>
+<td>2011    3.02</td>
+</tr>
+<tr>
+<td>S11</td>
+<td>When you are old</td>
+<td>Karen Mok</td>
+<td>2015    3.18</td>
+</tr>
+<tr>
+<td>S12</td>
+<td>Gentleman</td>
+<td>Joker Xue</td>
+<td>2016    4.50</td>
+</tr>
+<tr>
+<td>S13</td>
+<td>So close and so far</td>
+<td>Jane Zhang</td>
+<td>2010    4.38</td>
+</tr>
+<tr>
+<td>S14</td>
+<td>From the beginning to now</td>
+<td>Jeff Chang</td>
+<td>2002    4.33</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>In table 1, the information of the songs used for frequency domain analysis is presented. Each row corresponds to a unique song, identified by a series number ranging from S0 to S14. The table provides details such as the song names, the respective authors, the release year, and the duration of each song in minutes. These songs span a variety of genres and time periods, offering a diverse dataset for the analysis of frequency characteristics. By analyzing the frequency domain features of each song, the study aims to classify the songs based on their spectral properties. For example, Lo Ta-yu’s ”Tong nian (Childhood)” from 1982, with a duration of 3.50 minutes, serves as one of the tracks used to explore how frequency patterns differ across time and musical styles. Other examples include<br>more contemporary tracks like ”Dream it possible” by Delacey from 2016, and ”Light chaser” by Cen Ning’er from 2017, both offering insight into how modern production techniques influence the frequency spectrum. The dataset includes songs of varying lengths, with ”Nightingale” by Yanni being the longest at 5.44 minutes, and ”Lovesickness” by Mao Amin being one of the shortest at 3.02 minutes. This wide range in song durations, release years, and artists ensures a robust analysis of frequency domain features across different musical styles.</p>
+<p><img src="/2024/10/30/Project-Summary/fig1.png" alt></p>
+<p>Fig. 1: (a) Time series of the song Tong Nian (Childhood) by Lo Ta-yu, as shown in Table 1. (b) Frequency-magnitude analysis from (a), where the black line represents the raw frequency domain, and the red line indicates the smoothed curve. (c) Time-frequency analysis from (a), with the color bar ranging from -200 dB to 0 dB. The blue line denotes the dominant frequencies in the spectrogram.</p>
+<p>Figure 1 provides a comprehensive analysis of the song ”Tong Nian” (Childhood) by Lo Ta-yu, utilizing time-domain, frequency-domain, and time-frequency domain representations to showcase the signal’s characteristics. In figure 1a, the time series of the song is presented, illustrating the amplitude variations over a 200-second duration. The waveform demonstrates significant fluctuations, with peaks and troughs corresponding to louder and softer sections of the song. The<br>detailed structure of the waveform indicates the complexity of the musical composition, with dynamic changes in energy reflecting variations in the instrumentation and vocal intensity.</p>
+<p>Figure 1b shows the frequency-magnitude spectrum derived from the time-domain signal in figure 1a. The horizontal axis represents the magnitude in decibels (dB), and the vertical axis is the frequency in Hertz (Hz) on a logarithmic scale. The black line represents the raw frequency data obtained through Fourier transform, revealing the wide distribution of frequencies present in the audio signal. The red line is a smoothed curve that highlights the dominant trends, filtering out noise and providing a clearer view of the frequency distribution. The figure indicates that the majority of the song’s energy is concentrated at lower frequencies, typical for audio signals where fundamental tones and harmonics dominate the spectrum. The gradual decrease in magnitude as the frequency<br>increases further supports this, showing the reduced energy in higher frequencyranges.</p>
+<p>In figure 1c, a time-frequency spectrogram is displayed, offering a detailed view of how the frequency content evolves over time. The horizontal axis represents time in seconds, while the vertical axis represents frequency in Hertz, similar to figure 1b. The color bar indicates the magnitude in decibels, ranging from -200 dB (in dark blue) to 0 dB (in red). Warmer colors such as red and orange represent higher magnitude signals, whereas cooler colors like blue and green correspond to lower magnitude signals. The dominant frequencies, represented by the blue line across the spectrogram, remain consistent throughout the 200-second duration, suggesting that the main components of the song’s harmonic structure are stable. This consistency is reinforced by the predominance<br>of energy at lower frequencies, as seen in the yellow and orange regions. Fluctuations in the higher frequency range are visible, corresponding to moments of greater harmonic complexity, possibly caused by instrumental or vocal changes<br>in the song. Overall, the time-frequency analysis allows for a detailed examination of the song’s dynamic behavior, showing both stable and transient frequency components as the song progresses.</p>
+<p><img src="/2024/10/30/Project-Summary/fig2.png" alt></p>
+<p>Fig. 2: (a) Power spectrum of the analyzed signal, where the vertical red dashed line indicates the threshold frequency, dividing the signal into high-frequency and low-frequency components. (b) The high-frequency signal obtained by filtering the original data above the threshold frequency. (c) The low-frequency signal obtained by filtering the original data below the threshold frequency.</p>
+<p>In figure 2a, the power spectrum of the analyzed signal is presented, plotted on a logarithmic scale for both frequency (horizontal axis, in Hz) and magnitude (vertical axis, in dB). The red line represents the power of each frequency component present in the signal. The power decreases as the frequency increases, exhibiting a common trend observed in many real-world signals where most energy is concentrated in the lower frequencies. The sharp drop-off at high frequencies<br>indicates the dominance of low-frequency components in the signal. The vertical red dashed line denotes the threshold frequency, a critical point that separates the low-frequency and high-frequency regions. This frequency threshold is crucial<br>for filtering and separating the signal into distinct frequency bands. On the left side of the dashed line, the low-frequency components dominate, while on the right side, the high-frequency components are less prominent but still contribute to the overall signal power.</p>
+<p>Figure 2b shows the high-frequency components of the signal, which were extracted by applying a high-pass filter to the original data, retaining only frequencies above the threshold marked in figure 2a. The amplitude of the high frequency signal is significantly lower than that of the original signal, reflecting the reduced power in the high-frequency band. The time-domain plot of the filtered signal reveals rapid fluctuations and a highly oscillatory pattern, characteristic of high-frequency data. These components likely correspond to finer, more transient details within the signal, potentially caused by noise or fast-varying features in the original data.<br>237 Figure 2c displays the low-frequency components of the signal, obtained by applying a low-pass filter, which retains only the frequencies below the threshold shown in figure 2a. Compared to the high-frequency components in figure 2b, the low-frequency signal exhibits smoother variations over time, with fewer rapid fluctuations and a more stable, consistent pattern. This indicates that the low frequency components contain the majority of the signal’s energy, as seen from the power spectrum in figure 2a. The low-frequency signal likely represents the underlying structure or slower-changing features of the original data, which dominate the signal’s overall characteristics. This component often includes important physical or behavioral information in real-world signals, such as trends,cycles, or steady-state behavior.</p>
+<p>In figure 3, the correlation coefficient is plotted as a function of the threshold frequency, providing insight into how the filtered signals (high-pass and low-pass) compare with the original signal across different frequency ranges. The horizontal axis represents the threshold frequency in Hertz (Hz) on a logarithmic scale, spanning from very low frequencies (10−4 Hz) to very high frequencies (106Hz). The vertical axis displays the correlation coefficient, ranging from -0.2 to 1.2, where values closer to 1 indicate a higher correlation between the filtered and original signals, while values closer to 0 or negative values suggest low or no correlation.</p>
+<p><img src="/2024/10/30/Project-Summary/fig3.png" alt></p>
+<p>Fig. 3: Correlation coefficient as a function of threshold frequency. Orange circles indicate high-pass filter, and blue circles indicate low-pass filter.</p>
+<p>The blue circles represent the correlation coefficient for the low-pass filtered signal, where only the components below the threshold frequency are retained. Initially, at very low threshold frequencies, the low-pass filtered signal is highly correlated with the original signal, as shown by the coefficient being close to 1. As the threshold frequency increases, the correlation coefficient gradually decreases,reflecting the diminishing presence of low-frequency components in the filtered signal. At around 102 Hz, the correlation reaches its lowest point, where the low-frequency filtered signal contains minimal information compared to the original<br>signal. After this point, the low-pass filter retains fewer and fewer components of the original signal, leading to a further decline in correlation.</p>
+<p>The orange circles represent the correlation coefficient for the high-pass filtered signal, where only the components above the threshold frequency are retained. The behavior of the high-pass filter is nearly the opposite of the low-pass<br>filter. At low threshold frequencies, the high-pass filter retains very few high-frequency components, resulting in low correlation coefficients close to zero.</p>
+<p>However, as the threshold frequency increases beyond 102 Hz, the correlation coefficient rises, indicating that the high-pass filter is retaining more components similar to those in the original signal. At higher frequencies (around 104Hz), the correlation coefficient approaches 1, suggesting that the high-frequency components dominate the filtered signal, closely matching the original data.</p>
+<p>The crossover point where the low-pass and high-pass filters achieve similar correlation levels occurs around the threshold frequency of approximately 102 Hz. This frequency represents the point at which both low- and high-frequency components equally contribute to the structure of the original signal. Beyond this point, the behavior of the filters diverges again, with the low-pass filter retaining lower correlation values, and the high-pass filter reaching its peak correlation.Each point in the plot represents the correlation between the filtered signal(either low-pass or high-pass) and the original signal, providing a clear view of how the frequency content of the original signal is distributed and the impact of the filtering process.</p>
+<p><img src="/2024/10/30/Project-Summary/fig4.png" alt><br>Fig. 4: Diagram of a mathematical model to derive the frequency characteristics of high-pass and low-pass filters.</p>
+<p>Figure 4 illustrates a mathematical model used to analyze the frequency characteristics of high-pass and low-pass filters by plotting the correlation coefficient R against frequency. Several key points—A, B, O, C, and D—highlight important aspects of the filter behavior. Point A represents the starting correlation of the low-pass filter, and a larger value of A implies that even at very low frequencies, the signal retains significant information. This could suggest that the song has a broad distribution of energy even in the lower frequency ranges,<br>contributing to a fuller sound. In contrast, a smaller A would indicate that the song has minimal low-frequency content, emphasizing higher frequencies instead. Point B marks the point where the correlation for the high-pass filter starts to<br>rise significantly, with the slope k between points B and C representing how quickly the correlation increases. A larger slope k indicates that the high-pass filter quickly captures the high-frequency components, implying a narrow frequency bandwidth with a sharp distinction between low and high frequencies. This suggests that the song has a concentrated range of high frequencies, which could be characteristic of genres with crisp, sharp sounds, such as electronic or pop music. Conversely, a smaller slope k indicates that the song’s frequency spectrum is more spread out across both low and high frequencies, characteristic of songs with a wider harmonic range. Point O is the intersection between the low-pass and high-pass filter curves, representing the frequency where the contributions of low- and high-frequency components to the signal are equal. This  point provides insights into the balance of energy in the song’s frequency spectrum. If O occurs at a lower frequency, it suggests that the song is dominated by<br>low frequencies (such as bass-heavy or acoustic music). If it occurs at a higher frequency, the song is more influenced by high-frequency components, typical of bright or treble-dominated music. Point C indicates where the high-pass filter correlation nears its maximum, showing that the high-pass filter has nearly captured all the relevant high-frequency components of the song. A lower position of<br>C suggests that the song has a relatively limited range of high frequencies, while a higher C means the song extends into higher frequencies, possibly contributing to a more intricate and layered sound. Finally, point D marks the point where<br>the correlation for the high-pass filter stabilizes. If D occurs at a high correlation value, this implies that the song has substantial high-frequency content and that most of the energy in the high frequencies has been captured. If D occurs at a lower frequency, this suggests that the song’s high-frequency content is more limited. Together, these points provide a comprehensive view of how the song’s frequency components are distributed and how both low-pass and high-pass filters respond to the song’s spectral properties. This information can be used to assess the song’s bandwidth, energy distribution, and overall frequency content, and is crucial for tasks such as signal processing, noise reduction, and audio feature extraction.</p>
+<p><img src="/2024/10/30/Project-Summary/fig5.png" alt></p>
+<p>Fig. 5: Parameter values A,B,C,D,O,f,k from 14 songs as shown in Table 1. Note that f represents the mean dominant frequencies in Figure 1. The blue sections indicate the ratio of standard deviation to the mean value of categories.</p>
+<p>Figure 5 presents the parameter values A, B, C, D, O, f, and k, which were derived from the analysis of 14 songs listed in Table 1. The vertical axis is plotted on a logarithmic scale to accommodate the wide range of values, with each category corresponding to a specific characteristic of the frequency<br>analysis. These parameters include the points discussed in earlier figures: A (starting correlation for low-pass filter), B (initial point of rapid correlation increase for high-pass filter), C (near-maximal correlation for high-pass filter),<br>D (stabilization of correlation for high-pass filter), O (intersection of low-pass and high-pass filters), f (mean dominant frequencies from Figure 1), and k (slope between points B and C in the high-pass filter curve). The values of<br>338 these parameters vary significantly across the 14 songs, with points such as C and f showing larger magnitudes, reaching values above 1000, while points A and B remain relatively low, with values around 44 and 29, respectively. The parameter O, which represents the intersection of the filter curves, has a value of 406, indicating that this crossover point occurs at a midrange frequency. The slope k, representing the rate of change in correlation between points B and C, is relatively small at 0.26, suggesting a gradual increase in correlation as the high-pass filter captures more of the high-frequency components. The figure also includes blue error bars, representing the ratio of the standard deviation to the mean for each category. These error bars provide insight into the variability of each parameter across the 14 songs. For example, the high value of C (1391) indicates significant energy in higher frequencies for some songs, while the large error bar suggests considerable variability in this parameter among the songs. Similarly, the mean dominant frequency f (354) has a relatively large value  with a noticeable degree of variation, reflecting the diverse frequency content in the dataset. In contrast, the slope k shows minimal variation, indicating that the rate of correlation change between high-pass filters is consistent across the songs. Overall, the figure offers a comprehensive comparison of the key parameters from the frequency domain analysis, illustrating the range and variability of these features across different songs. This information is critical for understanding the distinct spectral characteristics of each song and how the filters’ behaviors vary<br>in different musical compositions.</p>
+<p><img src="/2024/10/30/Project-Summary/fig6.png" alt></p>
+<p>Fig. 6: A model to classify songs into treble and bass based on parameters O and k. Section A indicates lower O and higher k; Section B indicates higher O and higher k; Section C indicates lower O and lower k; Section D indicates higher O and lower k.</p>
+<p>Figure 6 presents a classification model for songs based on parameters O (the crossover frequency between high-pass and low-pass filters) and k (the slope of the high-pass filter). The model divides the songs into four sections:</p>
+<ul>
+<li><p>Section A: Represents songs with lower O and higher k, indicating bass-dominated songs with sharp transitions in high-frequency components.</p>
+</li>
+<li><p>Section B: Represents songs with higher O and higher k, indicating treble- dominated songs with narrow high-frequency bandwidth, characteristic of bright, high-pitched sounds.</p>
+</li>
+<li><p>Section C: Represents songs with lower O and lower k, indicating bass- dominated songs with smoother transitions and a broader frequency range. </p>
+</li>
+<li><p>Section D: Represents songs with higher O and lower k, indicating treble- dominated songs with a broad frequency bandwidth and gradual transitions between frequencies.</p>
+</li>
+</ul>
+<p>Each section reflects the balance of treble and bass, as well as the rate of frequency transitions in the song. The blue circles represent individual songs,categorized based on these spectral characteristics. This classification can be applied to various practical uses in the music industry and audio signal processing. For instance, it can be used for automatic ’genre classification’, where songs with similar spectral properties (e.g., bass-heavy with sharp transitions,or treble-dominant with smooth transitions) can be grouped into specific genres, such as electronic music, pop, or classical. Additionally, this model could be helpful in ’music recommendation systems’, where user preferences for certain spectral characteristics can guide the selection of songs. For example, listeners who prefer bass-heavy tracks can be directed towards songs from Sections A<br>and C. This classification could also be applied to ’audio equalization’, allowing sound engineers to fine-tune the bass and treble balance of a track based on its spectral profile. Finally, it could assist in ’audio compression’, as songs with broader frequency bandwidths (e.g., from Sections C and D) may require different compression techniques compared to songs with narrower bandwidths (Sections A and B), optimizing storage and streaming quality.</p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>This study presented a comprehensive frequency domain analysis of 14 songs spanning a range of genres and time periods. By examining the time-domain, frequency-domain, and time-frequency domain representations, we successfully classified the songs based on their spectral properties, providing insights into<br>their frequency content and dynamic behavior.</p>
+<p>Through the use of high-pass and low-pass filters, we identified key parameters, such as A, B, C, D, O, f, and k, which reflect the frequency characteristics of each song. These parameters highlighted variations in frequency content, with<br>C and f showing higher values, indicating significant energy in higher frequencies for some songs, while parameters such as A and B showed smaller values,reflecting the predominance of low-frequency components in other tracks. </p>
+<p>We proposed a classification model based on the crossover frequency (O) and the slope (k) of the high-pass filter, dividing the songs into four distinct categories: bass-dominated with sharp transitions (Section A), treble-dominated with narrow bandwidth (Section B), bass-dominated with smooth transitions (Section C), and treble-dominated with broad bandwidth (Section D). This classificationnot only captures the balance between treble and bass but also reflects the rate of frequency transitions in each song.</p>
+<p>The classification model developed in this study has multiple practical applications in the music industry. It can be utilized for automatic genre classification,guiding the grouping of songs with similar spectral characteristics. Additionally,it can enhance music recommendation systems by matching user preferences to specific spectral features. The model also holds potential in audio equalization,where engineers can fine-tune bass and treble balance according to the spectral profile. Finally, this classification can assist in optimizing audio compression techniques based on the frequency bandwidth of the songs, improving both storage and streaming quality.</p>
+<p>Overall, the results of this study provide a robust framework for analyzing and classifying songs based on their frequency characteristics, offering new avenues for practical applications in signal processing and the music industry.</p>
+<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><ol>
+<li><p>George Tzanetakis and Perry Cook. Musical genre classification of audio signals. IEEE Transactions on Speech and Audio Processing, 10(5):293–302, 2002.</p>
+</li>
+<li><p>Bob L. Sturm. A survey of evaluation in music genre recognition. Proceedings of Adaptive Multimedia Retrieval: Semantics, Context, and Adaptation, pages 29–66, 2014.</p>
+</li>
+<li><p>Zhiyong Fu, Guojun Lu, Kai M. Ting, and Dengsheng Zhang. A survey of audio- based music classification and annotation. IEEE Transactions on Multimedia, 13(2):303–319, 2011.</p>
+</li>
+<li><p>Michael A. Casey, Remco Veltkamp, Masataka Goto, Marc Leman, Christophe Rhodes, and Malcolm Slaney. Content-based music information retrieval: Current directions and future challenges. Proceedings of the IEEE, 96(4):668–696, 2008. </p>
+</li>
+<li><p>ulius O. Smith. Spectral audio signal processing. Online book, available at <a target="_blank" rel="noopener" href="https://ccrma.stanford.edu/">https://ccrma.stanford.edu/</a> jos/sasp/, 2007.</p>
+</li>
+<li><p>Geoffroy Peeters. Large-scale evaluation of acoustic and subjective music similarity measures. Journal of New Music Research, 33(1):27–40, 2004.</p>
+</li>
+<li><p>Slim Essid, Ga ̈el Richard, and Bertrand David. Classification of musical instrument sounds using basic features. IEEE Transactions on Speech and Audio Processing, 14(4):1362–1370, 2006.</p>
+</li>
+<li><p>R.N. Bracewell. The Fourier Transform and Its Applications. McGraw-Hill, 2000. </p>
+</li>
+<li><p>Alan V. Oppenheim and Ronald W. Schafer. Discrete-time signal processing. Pren- tice Hall, 1999.</p>
+</li>
+<li><p>John Road and Julius Smith. Wavelet analysis for music information retrieval. Journal of the Acoustical Society of America, 100(4):2483–2491, 1996.</p>
+</li>
+<li><p>Julius O. Smith. Spectral Audio Signal Processing. W3K Publishing, 2011.</p>
+</li>
+<li><p>Joan Serra, Meinard Muller, and Peter Grosche. Unsupervised music structure annotation by time series structure features and segment similarity. IEEE Trans- actions on Multimedia, 16(5):1229–1240, 2013.</p>
+</li>
+<li><p>Olivier Lartillot and Petri Toiviainen. Automatic tagging of audio: The state-of- the-art. Computer Music Journal, 32(3):50–69, 2008.</p>
+</li>
+<li><p>Markus Schedl, Hamed Zamani, Zhaochun Chen, Yashar Deldjoo, and Mehdi Elahi. Current challenges and visions in music recommender systems research. Interna- tional Journal of Multimedia Information Retrieval, 7(2):95–116, 2018.</p>
+</li>
+<li><p>Eduardo F. Casagrande, Guilherme R. Oliveira, and Erika M. de Lima. Au- dio equalization based on musical genres. Journal of Audio Engineering Society, 64(12):972–984, 2016.</p>
+</li>
+<li><p>Iftikhar Hussain Razzak, Sagheer Naz, and Anam Zaib. Audio compression in multimedia and its challenges. Multimedia Tools and Applications, 78(13):18169– 18193, 2019.</p>
+</li>
+</ol>
+
+        
+        
+      
+    </div>
+    <footer class="article-footer">
+      
+        <div class="article-tag-wrap">
+          
+
+          
+          
+    <div class="social-share">
+      <span>Share:</span>
+    </div>
+
+
+
+        </div>
+      
+      
+      
+    </footer>
+  </div>
+</article>
+
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title"><i class="fa fa-posts"></i> Recent</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2024/10/30/Project-Summary/">Project Summary</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title"><i class="fa fa-archive"></i> Archive</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/">2024</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+
+  
+</aside>
+        
+      </div>
+      <a id="totop" href="#top"></a>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      <p>
+        <a href="/sitemap.xml">Site Map</a>
+        <span> | </span><a href="/atom.xml">Subscribe to this site</a>
+        <span> | </span><a href="/about/">Contact the blogger</a>
+      </p>
+      
+        <p>
+          <i class="fa fa-visitors"></i>
+          <i id="busuanzi_container_site_uv"><i id="busuanzi_value_site_uv"></i></i>
+          ，
+          <i class="fa fa-views"></i>
+          <i id="busuanzi_container_site_pv"><i id="busuanzi_value_site_pv"></i></i>
+        </p>
+      
+      <p>
+        <span>Copyright &copy; 2024 LSY.</span>
+        <span>Theme by <a href="https://github.com/chaooo/hexo-theme-BlueLake/" target="_blank">BlueLake.</a></span>
+        <span>Powered by <a href="https://hexo.io/" target="_blank">Hexo.</a></span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+    </div>
+  </div>
+  
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+<script src="/js/search.json.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+
+  
+<script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+
+
+  
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</body>
+</html>
